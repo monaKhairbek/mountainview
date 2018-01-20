@@ -109,7 +109,7 @@
 
                         <div class="form-group">
                             <label>Mobile</label>
-                            <input type="tel" class="form-control" name="mobile" placeholder="Enter Mobile Number" required />
+                            <input type="text" pattern="^0*\d{1,10}$"  class="form-control" name="mobile" placeholder="Enter Mobile Number 01xxxxxxxxx" required />
                         </div>
                         <div class="form-group form-Select">
                             <label>How would you like us to contact you?</label>
