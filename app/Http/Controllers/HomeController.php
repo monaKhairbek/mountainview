@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Session;
 use App\Subscriptions;
 class HomeController extends Controller
 {
@@ -40,9 +40,7 @@ class HomeController extends Controller
         $requestData = $request->all();
        
         Subscriptions::create($requestData);
-        
-    
-
+           
         return redirect('home');
     }
 

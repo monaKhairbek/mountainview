@@ -103,9 +103,9 @@
                         </div>
                         <div class="form-group ">
                             <label>Email</label>
-                            <input type="text" class="form-control" name="email" placeholder="Enter Your Email" required />
+                            <input type="email" class="form-control" name="email" placeholder="Enter Your Email" required />
                         </div>
-                        <input type="hidden" class="form-control" name="source" value="www.facebook.com" required />
+                        <input type="hidden" class="form-control" name="source" value="facebook" required />
 
                         <div class="form-group">
                             <label>Mobile</label>
