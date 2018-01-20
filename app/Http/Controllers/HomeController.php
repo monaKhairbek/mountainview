@@ -40,8 +40,12 @@ class HomeController extends Controller
         $requestData = $request->all();
        
         Subscriptions::create($requestData);
-           return view('thanks');
+        return redirect('thanks');
        // return redirect('home');
+    }
+    
+    public function thanks(){
+        return view('thanks');
     }
 
     public function browse()

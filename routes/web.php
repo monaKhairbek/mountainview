@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
+Route::get('/thanks', 'HomeController@thanks');
 Route::post('/add-request', ['as' => 'add-request', 'uses' => 'HomeController@addRequest']);
 
 Route::get('downloadExcel', ['as' => 'downloadExcel', 'uses' => 'Admin\\SubscriptionsController@downloadXls']);
