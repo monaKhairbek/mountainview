@@ -1,0 +1,1011 @@
+
+@font-face {
+    font-family: 'DroidKufiRegular';
+    src: url('../fonts/DroidKufiRegular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/DroidKufiRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/DroidKufiRegular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/DroidKufiRegular.woff2') format('woff2'), url('../fonts/DroidKufiRegular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/DroidKufiRegular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Site/Roboto-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Site/Roboto-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Site/Roboto-Regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/Site/Roboto-Regular.woff2') format('woff2'), url('../fonts/Site/Roboto-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/Site/Roboto-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url('../fonts/Site/NexaBold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Site/NexaBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Site/NexaBold.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/Site/NexaBold.woff2') format('woff2'), url('../fonts/Site/NexaBold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/Site/NexaBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url('../fonts/Site/NexaLight.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Site/NexaLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Site/NexaLight.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/Site/NexaLight.woff2') format('woff2'), url('../fonts/Site/NexaLight.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/Site/NexaLight.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+html, body {
+    height: 100%;
+    background: #ffffff;
+}
+/************************************************  scrrol  ***************************************************/
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+
+::-webkit-scrollbar-button {
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b9babb;
+    border: 30px none #ffffff;
+    border-radius: 100px;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(98, 106, 108);
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+        background: rgb(98, 106, 108);
+    }
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none #3c3939;
+    border-radius: 100px;
+}
+
+    ::-webkit-scrollbar-track:hover {
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-track:active {
+        background: transparent;
+    }
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+
+/************************************************  scrrol  ***************************************************/
+/************************************************  modal  ***************************************************/
+.vertical-alignment-helper {
+    display: table;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events: none;
+}
+
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width: inherit;
+    height: inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+}
+
+
+.modal-title {
+    color: #02862b;
+    font-size: 20px;
+}
+
+.modal-header .close {
+    background: #02862b;
+    opacity: 1;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #02862b;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    height: 35px;
+    width: 35px;
+    font-size: 25px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+}
+
+    .modal-header .close:hover {
+        background: #fff;
+        color: #fcb040;
+    }
+
+.modal-header {
+    border: 0px;
+}
+
+
+
+.datepicker {
+    z-index: 1051 !important;
+}
+
+/************************************************  modal  ***************************************************/
+
+
+
+/************************************************************** Header **********************************************************/
+.a-Header {
+    position: fixed;
+    width: 100%;
+    padding-top: 19px;
+    padding-bottom: 10px;
+    top: 0;
+    z-index: 10;
+}
+
+    .a-Header .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+        margin: 0;
+        border: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+.a-logo {
+    display: -webkit-inline-box;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 100%;
+    z-index: 1;
+}
+
+.a_LeftMenu {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: rgba(21,21,21,0.54);
+    padding-right: 100px;
+    margin-left: -10px;
+}
+
+.navbar-default .a-Menus.navbar-collapse {
+    padding: 0;
+}
+
+    .navbar-default .a-Menus.navbar-collapse .nav.navbar-nav {
+        float: right;
+    }
+
+        .navbar-default .a-Menus.navbar-collapse .nav.navbar-nav > li > a {
+            padding: 25px 0px 25px 22px;
+            color: #fff;
+            font-family: 'NexaBold';
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+            /*.navbar-default .a-Menus.navbar-collapse .nav.navbar-nav > .active > a,
+        .navbar-default .a-Menus.navbar-collapse .nav.navbar-nav > .active > a:focus,
+        .navbar-default .a-Menus.navbar-collapse .nav.navbar-nav > .active > a:hover {
+            color: #881345;
+            background-color: transparent;
+            font-family: 'opensans-regular';
+        }*/
+
+            .navbar-default .a-Menus.navbar-collapse .nav.navbar-nav > li > a:hover {
+                color: #c3a537;
+            }
+
+.a-Header + section {
+    margin-top: 140px;
+}
+
+.a-Header * {
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+}
+
+.a-Header.smaller {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background: #d7c68b;
+}
+
+
+
+    .a-Header.smaller .navbar-default .a-Menus.navbar-collapse .nav.navbar-nav > li > a {
+        padding: 15px 0px 15px 35px;
+        font-size: 15px;
+    }
+
+
+
+    .a-Header.smaller .Logo img {
+        height: 100px;
+    }
+
+.AnchorPhone {
+    padding-left: 55px !important;
+}
+.a-Header .navbar-default .a-Menus.navbar-collapse .nav.navbar-nav > li > a i {
+    padding-right: 5px;
+    position: absolute;
+    right: 48px;
+    font-size: 25px;
+    top: 24px;
+}
+.a-Header.smaller .navbar-default .a-Menus.navbar-collapse .nav.navbar-nav > li > a i {
+    
+    right: 41px;
+
+    top: 12px;
+}
+/************************************************************** Header **********************************************************/
+
+/************************************************  Slider  ***************************************************/
+
+.HomeBanner {
+    position: relative;
+    z-index: 0;
+    background: #d7c68b;
+    padding-top: 210px;
+}
+
+
+/************************************************  Slider  ***************************************************/
+
+/************************************************  SectionForms  ***************************************************/
+
+
+.Title {
+    color: #0e0e0e;
+    margin-top: 30px;
+    line-height: 1;
+    font-size: 45px;
+    font-family: "NexaBold";
+    border-bottom: 5px solid #c3a537;
+    padding-bottom: 30px;
+}
+
+
+.SectionForms .form-group {
+    display: block;
+    position: relative;
+    margin: 10px auto;
+}
+
+.form-group .form-control {
+    border: 1px solid #bcb9b9;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #464646;
+    height: 45px;
+    font-family: 'NexaLight';
+    padding: 6px 25px;
+}
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #464646 !important;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: #464646 !important;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: #464646 !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #464646 !important;
+}
+
+.form-group.textarea-group {
+    width: 99.7%;
+    direction: rtl;
+}
+
+    .form-group.textarea-group .form-control {
+        text-align: left;
+        text-align-last: left;
+        height: initial;
+    }
+
+select {
+    /* reset */
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.form-group.form-Select:before {
+    content: '\f107';
+    font-family: FontAwesome;
+    color: #141414;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 55%;
+    pointer-events: none;
+    font-size: 20px;
+    background: transparent;
+    width: 18px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+button.Abtn.btn.btn-default {
+    width: 100%;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+    padding: 10px 0;
+    border: 1px solid;
+    display: block;
+    margin: 0 auto;
+    font-family: 'NexaBold';
+}
+
+    button.Abtn.btn.btn-default:hover {
+        color: #c3a537;
+        background: #fff;
+    }
+
+input.form-control.parsley-error {
+    border: 1px solid red;
+}
+
+.parsley-errors-list li {
+    color: red;
+    padding-top: 5px;
+}
+
+li.parsley-required {
+    display: none;
+}
+
+.Anotherbtn {
+    width: 30%;
+    color: #131313;
+    background: #f7f7f7;
+    font-size: 16px;
+    padding: 15px 0;
+    border: 1px solid #f7f7f7;
+    display: block;
+    margin: 15px auto;
+}
+
+.a-MassageSuc {
+    font-family: 'Nunito-Medium';
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: rgb(61, 158, 77);
+    margin: 0 auto;
+}
+
+.a-MassageFail {
+    font-family: 'Nunito-Medium';
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    background: rgb(160, 19, 24);
+    margin: 0 auto;
+}
+
+.MainBanner {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.SectionForms {
+    -webkit-flex: 0.3;
+    -ms-flex: 0.3;
+    flex: 0.3;
+}
+
+.BannerImg {
+    -webkit-flex: 0.7;
+    -ms-flex: 0.7;
+    flex: 0.7;
+}
+
+    .BannerImg img {
+        width: 100%;
+    }
+
+.Interested {
+    font-family: 'NexaLight';
+    font-size: 19px;
+    color: #fff;
+    line-height: 1;
+    padding-top: 20px;
+}
+
+.Please {
+    font-family: 'NexaLight';
+    font-size: 16px;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.SectionForms .form-group label {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 100;
+    font-family: 'NexaLight';
+}
+
+.HoverImg img {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.HoverImg:hover img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+/************************************************  SectionForms  ***************************************************/
+/************************************************  Gallery  ***************************************************/
+
+.Gallery .container .GalleryItems {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.Gallery .container a {
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+    .Gallery .container a:last-child {
+        margin-right: 0px;
+    }
+
+    .Gallery .container a img {
+        width: 100%;
+    }
+
+.GalleryImg {
+    position: relative;
+    display: block;
+}
+
+    .GalleryImg i {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        color: #fff;
+        font-size: 60px;
+        margin-top: -30px;
+        margin-right: -30px;
+    }
+
+    .GalleryImg:hover i {
+        color: #d7c68b;
+    }
+
+.GalleryText {
+    text-align: center;
+    display: block;
+    color: #0e0e0e;
+    font-family: 'NexaBold';
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.Gallery {
+    background: #f7f7f7;
+}
+/************************************************  Gallery  ***************************************************/
+
+/************************************************  Brochure  ***************************************************/
+
+
+.Brochure .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.BrochureItem {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    text-align: center;
+}
+
+.BrochureItemTitle {
+    color: #0d0d0d;
+    font-family: 'NexaBold';
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.BrochureItem a {
+    color: #fff;
+    background: #d7c68b;
+    font-size: 16px;
+    padding: 15px 0;
+    border: 1px solid;
+    display: block;
+    margin: 0 auto;
+    font-family: 'NexaBold';
+    border-radius: 5px;
+    width: 50%;
+    text-decoration: none;
+}
+
+    .BrochureItem a:hover {
+        color: #fff;
+        background: #828282;
+    }
+/************************************************  Brochure  ***************************************************/
+
+/************************************************  Footer  ***************************************************/
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px;
+    left: initial;
+    right: 10px;
+}
+
+    #top-link-block.affix i {
+        color: #c0a336;
+    }
+
+
+.a-Footer {
+    -webkit-box-shadow: inset 3px 5px 22px rgba(0, 0, 0, 0.15), 0px 0px 0px rgba(201, 197, 197, 0.54);
+    box-shadow: inset 3px 5px 22px rgba(0, 0, 0, 0.15), 0px 0px 0px rgba(201, 197, 197, 0.54);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+    .a-Footer .container {
+        height: 45px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        margin: 15px auto;
+    }
+
+.AllRights {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-family: 'NexaBold';
+    font-size: 13px;
+}
+
+.FastLinks {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    font-family: 'NexaBold';
+    font-size: 15px;
+    text-align: center;
+    color: #b49525;
+}
+
+    .FastLinks span {
+        font-family: 'NexaBold';
+    }
+
+.a-Footer .container .LOGOFo {
+    -webkit-flex: 0.5;
+    -ms-flex: 0.5;
+    flex: 0.5;
+    text-align: center;
+}
+
+    .a-Footer .container .LOGOFo img {
+    }
+
+.FastLinks a {
+    color: #b49525;
+    margin: 0 5px;
+    font-size: 15px;
+}
+
+.callcenter {
+    font-family: 'NexaBold';
+    font-size: 19px;
+    color: #000;
+}
+
+p#MapAddress {
+    margin-bottom: 0;
+}
+
+    p#MapAddress a {
+        margin: 0;
+        font-size: 14px;
+        color: #0d0d0d;
+        font-family: 'NexaBold';
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+.gm-style-iw {
+    /*width: 320px !important;*/
+    padding-left: 20px;
+}
+
+.OfficeLo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: 25px 16%;
+}
+
+.OfficeLoTitle {
+    color: #0e0e0e;
+    line-height: 1;
+    font-size: 18px;
+    font-family: "NexaBold";
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.OfficeLo ul {
+}
+
+.OfficeLo li {
+    color: #0d0d0d;
+    font-size: 16px;
+    font-family: "NexaBold";
+    text-transform: uppercase;
+}
+
+    .OfficeLo li:before {
+        content: "\f111";
+        color: #c3a537;
+        font-family: FontAwesome;
+        font-size: 10px;
+        margin-right: 8px;
+    }
+/************************************************  Footer  ***************************************************/
+
+/************************************************  home page  ***************************************************/
+
+/************************************************  media   ***************************************************/
+
+
+@media only screen and (max-width: 585px ) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 767px) {
+}
+
+@media only screen and (max-width: 1265px) {
+}
+
+@media only screen and (max-width: 1200px) {
+    .OfficeLo {
+        margin: 25px 10%;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    .a-Header {
+        padding: 0px 0px;
+    }
+
+
+    .vertical-alignment-helper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .modal-dialog.vertical-align-center {
+    }
+
+    .MainBanner {
+        display: block;
+    }
+
+    .AllRights {
+        -webkit-flex: 0.7;
+        -ms-flex: 0.7;
+        flex: 0.7;
+    }
+
+    .a-Footer .container {
+        height: auto;
+        display: block;
+    }
+
+    .AllRights {
+        width: 49%;
+        display: inline-block;
+    }
+
+    .a-Footer .container .LOGOFo {
+        text-align: right;
+        display: inline-block;
+        width: 47%;
+    }
+
+    .FastLinks {
+        display: inline-block;
+        width: 49%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .callcenter {
+        display: inline-block;
+        width: 46%;
+        text-align: right;
+    }
+
+    .OfficeLo {
+        margin: 25px 0;
+    }
+
+    .OfficeLoTitle {
+        font-size: 17px;
+        margin-right: 5px;
+    }
+
+    .OfficeLo li {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .a-Header {
+        position: relative;
+        background: #c0a336;
+    }
+
+        .a-Header + section {
+            margin-top: 0px;
+        }
+
+    .a-logo {
+        width: 100%;
+        margin: 0;
+    }
+
+        .a-logo img {
+            width: auto;
+            height: 100px;
+        }
+
+    .a-buttonToggle {
+        display: inline-block;
+        float: right;
+    }
+
+
+
+    .navbar-default .a-Menus.navbar-collapse {
+        padding-right: 15px;
+        padding-left: 15px;
+        z-index: 1;
+        position: relative;
+        margin: 0;
+    }
+
+    .a-logo {
+        width: 100%;
+        margin: 0;
+        /*display: block;*/
+    }
+
+    .a-buttonToggle {
+        display: inline-block;
+        float: right;
+    }
+
+    .a_LeftMenu {
+        width: 100%;
+        margin-top: 5px;
+        padding-right: 0;
+        margin-left: 0;
+        background: transparent;
+    }
+
+    .navbar-default .a-Menus.navbar-collapse .nav.navbar-nav {
+        float: none;
+        margin-bottom: 0;
+    }
+
+        .navbar-default .a-Menus.navbar-collapse .nav.navbar-nav > li > a {
+            padding: 15px;
+        }
+
+            .navbar-default .a-Menus.navbar-collapse .nav.navbar-nav > li > a:hover {
+                color: #fff;
+                background: #c0a336;
+            }
+
+    .a-Header .navbar-default {
+        display: block;
+    }
+
+    a.Logo {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+
+    .HomeBanner {
+        padding-top: 10px;
+    }
+
+    .a-Header .container {
+        background-color: rgba(21,21,21,0.54);
+        padding: 15px;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #fff;
+    }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #fff;
+        }
+
+    .Gallery .container .GalleryItems {
+        display: block;
+        text-align: center;
+    }
+
+    .Gallery .container a {
+        margin-right: 2%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+        .Gallery .container a:nth-child(2) {
+            margin-right: 0%;
+        }
+
+    .Brochure .container {
+        display: block;
+    }
+
+
+    .BrochureItem {
+        margin-bottom: 15px;
+    }
+
+        .BrochureItem a {
+            width: 80%;
+        }
+
+    .AllRights, .a-Footer .container .LOGOFo, .FastLinks, .callcenter {
+        width: 95%;
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    .OfficeLo {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .SectionForms .form-group {
+        width: 100%;
+        margin: 0 0 10px !important;
+    }
+
+        .SectionForms .form-group:nth-child(2n) {
+            margin: 0 0 10px !important;
+        }
+
+    button.Abtn.btn.btn-default, .Anotherbtn {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .a-Header .container {
+        display: block;
+    }
+
+    .Gallery .container a {
+        margin-right: 0%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+}
+
+@media only screen and (max-width: 400px) {
+}
+
+@media only screen and (max-width: 366px) {
+}
+
+
+/************************************************  media   ***************************************************/
