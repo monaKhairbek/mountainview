@@ -11,7 +11,7 @@
     <link href="mountainview/css/reset.css" rel="stylesheet" />
     <link href="mountainview/css/bootstrap.min.css" rel="stylesheet" />
     <link href="mountainview/css/font-awesome.css" rel="stylesheet" />
-    <link href="mountainviewcss/animate.min.css" rel="stylesheet" />
+    <link href="mountainview/css/animate.min.css" rel="stylesheet" />
     <link href="mountainview/css/material-design-iconic-font.css" rel="stylesheet" />
     <link href="mountainview/css/Swiper.css" rel="stylesheet" />
     <!-- fancybox -->
@@ -90,11 +90,11 @@
                             FailureMsg
                         </div>
                         <div class="form-group form-Select">
-                            <label>Tittle</label>
+                            <label>Title</label>
                             <select class="form-control" name="title">
                                 <option>Mr</option>
                                 <option>Ms</option>
-                                <option>Mss</option>
+                                <option>Miss</option>
                             </select>
                         </div>
                         <div class="form-group ">
@@ -173,9 +173,9 @@
             </div>
             <div class="BrochureItem">
                 <div class="BrochureItemTitle">
-                    Mountain View iCity New Cairo Brochure:
+                    Mountain View iCity October Brochure:
                 </div>
-                <a href="https://www.mountainviewegypt.com/abouticity/icityoctober/mobile/index.html#p=1" target="_blank">Know More</a>
+                <a href="https://www.mountainviewegypt.com/abouticity/icityoctober/index.html" target="_blank">Know More</a>
             </div>
         </div>
     </div>
@@ -214,7 +214,7 @@
     <div class="a-Footer wow fadeIn" data-wow-duration="1s" data-wow-delay=".3s">
         <div class="container">
             <span class="AllRights">© 2018 Mountain View.All Rights Reserved  </span>
-            <div class="LOGOFo"><img src="mountainview/mountainviewImages/LOGOFo.png" /> </div>
+            <div class="LOGOFo"><img src="mountainview/Images/LOGOFo.png" /> </div>
             <span class="FastLinks">
                 <span>Follow US</span>
                 <a href="https://www.facebook.com/MountainViewEgypt" target="_blank" title="facebook"><i class="fa fa-facebook"></i></a>
@@ -255,7 +255,7 @@
         var map;
         function initMap() {
             var map;
-            var place = { lat: 30.0687659, lng: 31.5778927 };
+           // var place = { lat: 30.0687659, lng: 31.5778927 };
             var place1 = { lat: 30.020722, lng: 31.003083 };
             var place2 = { lat: 30.071917, lng: 31.344472 };
             map = new google.maps.Map(document.getElementById('map'), {
@@ -270,7 +270,7 @@
             map.addListener('mouseout', function () {
                 map.set('scrollwheel', false);
             });
-            var image = 'images/mark.png';
+            var image = 'mountainview/Images/mark.png';
             //var beachMarker = new google.maps.Marker({
             //    position: place,
             //    map: map,
@@ -303,7 +303,7 @@
                 icon: image
             });
             $('#Mapmenue').slideToggle();
-            Address1 = "<a href='https://goo.gl/maps/5pZkFA91CdB2' target='_blank' > Arkan: Arkan Mall, 6th of October City, Bldg. No. 6, 4th Floor </a>"
+            Address1 = "<a href='https://goo.gl/maps/5pZkFA91CdB2' target='_blank' > 6th of October City, Bldg. No. 6, 4th Floor </a>"
             $("#MapAddress").html(Address1);
 
 
