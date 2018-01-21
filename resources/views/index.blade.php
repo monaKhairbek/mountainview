@@ -167,13 +167,13 @@
         <div class="container">
             <div class="BrochureItem">
                 <div class="BrochureItemTitle">
-                    Mountain View iCity New Cairo Brochure:
+                    Mountain View iCity New Cairo Brochure
                 </div>
                 <a href="https://www.mountainviewegypt.com/abouticity/icitynewcairo/index.html" target="_blank">Know More</a>
             </div>
             <div class="BrochureItem">
                 <div class="BrochureItemTitle">
-                    Mountain View iCity October Brochure:
+                    Mountain View iCity October Brochure
                 </div>
                 <a href="https://www.mountainviewegypt.com/abouticity/icityoctober/index.html" target="_blank">Know More</a>
             </div>
