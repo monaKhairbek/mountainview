@@ -193,7 +193,7 @@
                 </div>
                 <ul>
                     <li>City Stars: Star Capital 8, Nasr City, Ground Floor</li>
-                    <li>Arkan: Arkan Mall, 6th of October City, Bldg. No. 6, 4th Floor</li>
+                    <li>6th of October City, Bldg. No. 6, 4th Floor</li>
                 </ul>
             </div>
 
