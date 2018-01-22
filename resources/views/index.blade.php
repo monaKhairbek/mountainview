@@ -303,7 +303,7 @@
                 icon: image
             });
             $('#Mapmenue').slideToggle();
-            Address1 = "<a href='https://goo.gl/maps/5pZkFA91CdB2' target='_blank' > 6th of October City, Bldg. No. 6, 4th Floor </a>"
+            Address1 = "<a href='https://goo.gl/maps/CE4Q91boXiN2' target='_blank' > 6th of October City, Bldg. No. 6, 4th Floor </a>"
             $("#MapAddress").html(Address1);
 
 
@@ -327,7 +327,7 @@
             });
 
             $('#Mapmenue').slideToggle();
-            Address2 = "<a href='https://goo.gl/maps/qGLhfmMTNZr' target='_blank'> Star Capital 8, Nasr City, Ground Floor </a>"
+            Address2 = "<a href='https://goo.gl/maps/D247VyDoNHH2' target='_blank'> Star Capital 8, Nasr City, Ground Floor </a>"
             $("#MapAddress").html(Address2);
 
 
